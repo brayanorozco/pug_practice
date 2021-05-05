@@ -1,0 +1,20 @@
+html
+    head
+        title Web app
+    body
+        header
+            h1 Schedule website
+    block contentArea
+table
+    tr
+        th User ID
+        th Day
+        th Start At
+        th End At
+
+    each n in times 
+        tr
+            td= n.user_id
+            td= n.day
+            td= n.start_at
+            td= n.end_at

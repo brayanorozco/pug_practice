@@ -1,0 +1,22 @@
+html
+    head
+        title Web app
+        link(rel="stylesheet", href="/pugstyles.css")
+    body
+        header
+            h1 Schedule website
+    block contentArea
+
+table.table
+    tr
+        th First Name
+        th Last Name
+        th Email
+        th Password
+
+    each n in usersls
+        tr
+            td= n.firstname
+            td= n.lastname
+            td= n.email
+            td= n.password
