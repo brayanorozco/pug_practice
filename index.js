@@ -37,18 +37,16 @@ app.get("/schedules", (req, res) => {
 
 app.get('/schedules/:id', (req, res) => {
     
-    console.log(req.params.id);
-
+    console.log(req.params.id); //ids
+    
 
     if(req.params.id <= 2){
         schedule = [];
 
         for(i=0; i < data.schedules.length; i++){
 
-            console.log(i + data.schedules[i].user_id + req.params.id);
+            if (data.schedules[i].user_id == req.params.id){     
 
-            if (data.schedules[i].user_id === req.params.id){
-                
                 schedule.push(data.schedules[i]);
             }  
     }
