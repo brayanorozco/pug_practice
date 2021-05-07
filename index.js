@@ -73,5 +73,5 @@ app.get('/users/:id', (req, res) => {
         res.json("The user doesn't exist");
     }
 })
-//Hello
+
 app.listen(port, () => console.log("listening on port " + port));
